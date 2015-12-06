@@ -1,0 +1,39 @@
+%%This is a very basic article template.
+%%There is just one section and two subsections.
+\documentclass{article}
+
+\usepackage{graphicx}      % include this line if your document contains figures
+\usepackage{natbib}        % required for bibliography
+\usepackage{enumerate}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[centerlast,small,sc]{caption} 
+\setlength{\captionmargin}{30pt}
+\usepackage[brazilian]{babel}
+\usepackage[none]{hyphenat} 
+\usepackage{subcaption} 
+\usepackage{capt-of}
+\usepackage{kpfonts} 
+\usepackage{stackengine}
+\usepackage{calc}
+\newlength\shlength
+\newcommand\xshlongvec[2][0]{\setlength\shlength{#1pt}%
+  \stackengine{-5.6pt}{$#2$}{\smash{$\kern\shlength%
+    \stackengine{7.55pt}{$\mathchar"017E$}%
+      {\rule{\widthof{$#2$}}{.57pt}\kern.4pt}{O}{r}{F}{F}{L}\kern-\shlength$}}%
+      {O}{c}{F}{T}{S}}
+\sloppy  
+
+\begin{document}
+
+
+\input{intro}
+\input{problema}
+\input{revbib}
+
+
+
+
+
+\end{document}

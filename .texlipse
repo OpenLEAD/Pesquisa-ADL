@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Sat Dec 05 23:22:57 BRST 2015
+markTmpDer=true
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=main.tex
+outputFile=pesquisa_adl.pdf
+langSpell=pt
+markDer=true
+srcDir=
