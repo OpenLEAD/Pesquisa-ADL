@@ -1,6 +1,5 @@
-%%This is a very basic article template.
-%%There is just one section and two subsections.
-\documentclass{article}
+\documentclass{main}
+    
 
 \usepackage{graphicx}      % include this line if your document contains figures
 \usepackage{natbib}        % required for bibliography
@@ -27,13 +26,40 @@
 
 \begin{document}
 
+\begin{frontmatter}
+
+\title{Pesquisa - Análise dimensional por laser - fase 1}
+%\thanksref{footnoteinfo}} 
+
+%\thanks[footnoteinfo]{}
+\author[1]{Gabriel Alcantara C. S.}
+\author[1]{Eduardo Elael M. S.}
+\author[1]{Estevão Fróes}
+\author[2]{Julia Campana}
+\author[1]{Renan S. Freitas}
+\author[1]{Ramon R. Costa}
+
+  \address[1]{Departamento de Engenharia Elétrica, COPPE UFRJ, Rio de Janeiro,
+  Brasil} 
+  
+  \address[2]{Fundação Coordenação de Projetos, Pesquisas e Estudos Tecnológicos
+  (COPPETEC), Rio de Janeiro, Brasil}
+  
+%\begin{abstract}                % Abstract of not more than 250 words.
+%TODO Renan: Resumo
+%\end{abstract} 
+ 
+%\begin{keyword}
+%TODO Renan: Keywords
+%\end{keyword}
+
+\end{frontmatter}
+
 
 \input{intro}
 \input{problema}
 \input{revbib}
 
-
-
-
-
+\bibliography{main} 
+\appendix 
 \end{document}
